@@ -1,0 +1,40 @@
+.publicaciones-container {
+    max-width: 800px;
+    margin: auto;
+
+    .card {
+        margin-bottom: 15px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #555;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    .d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    .w-100 {
+        width: 100%; 
+    }
+}
