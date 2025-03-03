@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de Propiedades de Fondo y Objetos en CSS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ejemplos de Propiedades CSS para Imágenes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilosPropiedades.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <style>
+
+
+    </style>
 </head>
 <body>
+    <div class="container mt-5">
+        <h2>Ejemplos de Propiedades CSS para Imágenes</h2>
 
-    <div class="container">
-        <h2 class="my-4 text-center">Ejemplos de Propiedades de Fondo y Objetos en CSS</h2>
-
-        <div class="card">
-            <div class="background-section">
-                <h2>Fondo con background-image</h2>
-                <p>Este fondo usa background-position, background-size y background-attachment.</p>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h4>1. background-image con propiedades asociadas</h4>
+                <div class="background-image"></div>
+                <p>Imagen de fondo con <code>background-image</code>, <code>background-position</code>, <code>background-size</code>, y <code>background-attachment</code>.</p>
             </div>
         </div>
 
-        <div class="card">
-            <div class="background-responsive">
-                <h2>Fondo Responsivo</h2>
-                <p>Este fondo usa background-size: contain y se ajusta a la pantalla.</p>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h4>2. object-fit: cover</h4>
+                <img src="imgs/publicacion.png" alt="Imagen 1" class="object-fit-example img-fluid">
+                <p>Imagen con <code>object-fit: cover</code> para cubrir todo el contenedor sin distorsionarse.</p>
+            </div>
+
+            <div class="col-md-6">
+                <h4>3. object-fit: fill</h4>
+                <img src="imgs/publicacion.png" alt="Imagen 2" class="object-fit-fill img-fluid">
+                <p>Imagen con <code>object-fit: fill</code> para llenar todo el contenedor, lo que puede distorsionar la imagen.</p>
             </div>
         </div>
 
-        <div class="card">
-            <div class="image-container">
-                <h2>Imagen con object-fit</h2>
-                <img src="imgs/publicacion.png" alt="Imagen de ejemplo">
-                <p>La propiedad <code>object-fit: cover;</code> ajusta la imagen para que cubra completamente el área del contenedor sin distorsionarse.</p>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h4>4. object-position: top left</h4>
+                <img src="imgs/publicacion.png" alt="Imagen 3" class="object-position-top-left img-fluid">
+                <p>Imagen con <code>object-position: top left</code> para ajustar la imagen al principio de la esquina superior izquierda.</p>
+            </div>
+
+            <div class="col-md-6">
+                <h4>5. Imagen con border-radius</h4>
+                <img src="imgs/publicacion.png" alt="Imagen 4" class="rounded-image img-fluid">
+                <p>Imagen con bordes redondeados usando <code>border-radius</code> y <code>object-fit: cover</code> para ajustarse al contenedor.</p>
             </div>
         </div>
-
-        <div class="card">
-            <div class="image-container object-fit-example">
-                <h2>Imagen con object-fit: contain</h2>
-                <img src="imgs/publicacion.png" alt="Imagen de ejemplo">
-                <p>La propiedad <code>object-fit: contain;</code> ajusta la imagen para que se vea completamente dentro del contenedor sin recortarse.</p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="image-container image-viewport-example">
-                <h2>Imagen con object-fit: fill</h2>
-                <img src="imgs/publicacion.png" alt="Imagen de ejemplo">
-                <p>La propiedad <code>object-fit: fill;</code> distorsiona la imagen para que se ajuste completamente al contenedor.</p>
-            </div>
-        </div>
-        <a href="verPublicaciones.html" style="width: 100%;" class="btn btn-secondary">Atrás</a>
-
     </div>
+    <a href="verPublicaciones.html" class="btn btn-back">&#8592;</a>
 
-    <!-- Vincular al archivo JS de Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
